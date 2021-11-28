@@ -39,7 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'news.apps.NewsConfig',
-    'Login.apps.LoginConfig'
+    'Login.apps.LoginConfig',
+    'product.apps.ProductConfig',
+    'cart.apps.CartConfig',
+    'order.apps.OrderConfig',
+    'user.apps.UserConfig',
 ]
 
 MIDDLEWARE = [
@@ -58,9 +62,9 @@ AUTH_USER_MODEL = 'Login.MyUser'
 #STATIC_ROOT = 'static'
 
 # phan nay duoc them nua
-STATICFILES_DIRS ={
-    os.path.join(BASE_DIR , 'static'),
-}
+# STATICFILES_DIRS = {
+#     os.path.join(BASE_DIR, 'static'),
+# }
 
 
 
