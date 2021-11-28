@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .vanlong{
+            padding:10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <form action="{% url 'news:process'  %}" method="post">
+        {% csrf_token %}
+        {{f}}
+        <input type="submit" value="Gui mail">
+    </form>
+</body>
+</html>
